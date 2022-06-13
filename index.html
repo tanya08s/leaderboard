@@ -10,35 +10,24 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <title>LeaderBoard</title>
 </head>
-<body>
+<body onload="loadInitialData()">
  <div class="container">
     <div class="main">
         <div class="head">Leaderboard</div>
         <div class="first">
-            <input style="font-size:1rem" placeholder="First Name" type="text"/>
-            <input style="font-size:1rem" placeholder="Last Name" type="text"/>
-            <input style="font-size:1rem" placeholder="Country" type="text"/>
-            <input style="font-size:1rem" placeholder="Score" type="number"/>
-            <button type="button">Add Player</button>
+            <input style="font-size:1rem" id="firstname" placeholder="First Name" type="text"/>
+            <input style="font-size:1rem" id="lastname" placeholder="Last Name" type="text"/>
+            <input style="font-size:1rem" id="country" placeholder="Country" type="text"/>
+            <input style="font-size:1rem" id="score" placeholder="Score" type="number"/>
+            <button type="button" onclick="savePlayerData()">Add Player</button>
         </div>
-        <div class="second">
+        <div class="second_container">
+        </div>
+        
+        <!-- <div class="second">
             <div class="second_1">
                 <div>TANYA</div>
-                <div>INDIA</div>
-                <div>89</div>
-                
-            </div>
-            <div class="second_2">
-                <div class="display"><img style="width: 20px;" src="./dustbin-svgrepo-com.svg"/></div>
-                <div class="display">+5</div>
-                <div class="display">-5</div>
-            </div>
-            
-    
-        </div>
-        <div class="second">
-            <div class="second_1">
-                <div>ROSE</div>
+                <div>SINGH</div>
                 <div>INDIA</div>
                 <div>27</div>
                 
@@ -50,9 +39,9 @@
             </div>
             
     
-        </div>
+        </div> -->
     </div>
  </div>   
-
+<script src="./app.js"></script>
 </body>
 </html>

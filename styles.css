@@ -33,6 +33,11 @@ button{
     font-size: 1rem;
     color: aliceblue;
     border-radius: 3px;
+
+}
+button:hover{
+    cursor: pointer;
+    background-color:rgb(222, 114, 68) ;
 }
 
 .second{
